@@ -1,0 +1,9 @@
+<div class="container" *ngIf="beer">
+  <img class="beer-img" src="{{beer.image_url}}" alt="">
+  <h2>{{beer.name}}</h2>
+  <p>{{beer.description}}</p>
+  <h3>Abbinamenti:</h3>
+  <ul>
+    <li *ngFor="let pairing of beer.food_pairing">{{pairing}}</li>
+  </ul>
+</div>
